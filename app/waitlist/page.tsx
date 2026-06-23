@@ -49,7 +49,7 @@ export default function WaitlistPage() {
     <div className="min-h-screen bg-white flex flex-col">
       <LandingNavbar />
 
-      <main className="flex-1 flex items-center justify-center px-6 py-20">
+      <main className="flex-1 flex items-center justify-center px-6 pt-32 pb-20">
         <div className="w-full max-w-md text-center">
           {status === 'success' ? (
             <div>
