@@ -29,6 +29,19 @@ npm run dev                  # http://localhost:3000
 4. Point your apex domain (e.g. `cruxlogic.ai`) at this project, and host the
    dashboard on a subdomain (e.g. `app.cruxlogic.ai`).
 
+## Waitlist
+
+All "Sign up" / "Get started" CTAs point to `/waitlist`. The form stores the
+signup in Supabase (`waitlist` table) and emails a notification via Resend.
+
+**Setup:**
+1. Run [`supabase/waitlist.sql`](supabase/waitlist.sql) once in the Supabase SQL editor.
+2. Set these env vars (see `.env.example`):
+   - `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` — store signups
+   - `RESEND_API_KEY`, `WAITLIST_FROM_EMAIL`, `WAITLIST_NOTIFY_EMAIL` — email notification
+
+If Resend isn't configured the signup is still stored (the email is best-effort).
+
 ## Dependencies on the dashboard
 
 - **Supabase** — `/blog` reads posts and `/api/feedback` writes feedback. Uses the

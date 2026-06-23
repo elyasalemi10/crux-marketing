@@ -514,10 +514,10 @@ export default function QuoteGeneratorPage() {
               CruxLogic can automatically generate quotes and track client responses with AI.
             </p>
             <Link
-              href="/sign-up"
+              href="/waitlist"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#2bb1ea] text-white font-medium hover:bg-[#2bb1ea]/90 transition-colors"
             >
-              Get Started Free
+              Join the Waitlist
             </Link>
           </div>
         </div>

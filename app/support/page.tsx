@@ -179,7 +179,7 @@ export default function SupportPage() {
               <ul className="space-y-4">
                 <li><Link href="/pricing" className="text-base text-gray-600 hover:text-[#2bb1ea]">Pricing</Link></li>
                 <li><Link href="/login" className="text-base text-gray-600 hover:text-[#2bb1ea]">Login</Link></li>
-                <li><Link href="/sign-up" className="text-base text-gray-600 hover:text-[#2bb1ea]">Sign Up</Link></li>
+                <li><Link href="/waitlist" className="text-base text-gray-600 hover:text-[#2bb1ea]">Join Waitlist</Link></li>
               </ul>
             </div>
 

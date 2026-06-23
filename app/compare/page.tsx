@@ -84,10 +84,10 @@ export default function ComparePage() {
           <div className="inline-flex items-center gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-[#2bb1ea]/10 to-[#2bb1ea]/5 border border-[#2bb1ea]/20">
             <span className="text-gray-700">Ready to try CruxLogic?</span>
             <Link
-              href="/sign-up"
+              href="/waitlist"
               className="inline-flex items-center gap-1 text-[#2bb1ea] font-medium hover:underline"
             >
-              Start for free <ArrowRight className="h-4 w-4" />
+              Join the waitlist <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>

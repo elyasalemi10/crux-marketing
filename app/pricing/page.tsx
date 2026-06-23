@@ -28,8 +28,8 @@ const plans = [
       'Web dashboard access',
       '50 AI interactions per day',
     ],
-    cta: 'Get Started Free',
-    href: '/sign-up',
+    cta: 'Join the Waitlist',
+    href: '/waitlist',
     highlighted: false,
   },
   {
@@ -48,8 +48,8 @@ const plans = [
       'Unlimited AI interactions',
       'Priority support',
     ],
-    cta: 'Start Pro Trial',
-    href: '/sign-up?plan=pro',
+    cta: 'Join the Waitlist',
+    href: '/waitlist',
     highlighted: true,
   },
   {

@@ -173,12 +173,12 @@ export default function LandingPage() {
             </p>
 
             <div className="mt-6 sm:mt-8 flex items-center justify-center">
-              <Link href="/sign-up">
+              <Link href="/waitlist">
                 <Button 
                   size="lg"
                   className="h-11 sm:h-12 px-6 sm:px-8 bg-[#2bb1ea] text-white hover:bg-[#2bb1ea]/90 shadow-lg font-medium text-sm sm:text-base"
                 >
-                  Start for free
+                  Join the waitlist
                 </Button>
               </Link>
             </div>
@@ -331,7 +331,7 @@ export default function LandingPage() {
                             </p>
                             
                             {/* CTA */}
-                            <Link href="/sign-up">
+                            <Link href="/waitlist">
                               <Button className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-5 sm:px-6 py-2 sm:py-2.5 h-auto text-xs sm:text-sm">
                                 Start building
                               </Button>
@@ -418,7 +418,7 @@ export default function LandingPage() {
                     {slide.description}
                   </p>
                   
-                  <Link href="/sign-up">
+                  <Link href="/waitlist">
                     <Button className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-5 py-2 h-auto text-xs">
                       Start building
                     </Button>
@@ -470,7 +470,7 @@ export default function LandingPage() {
                     Web dashboard
                   </li>
                 </ul>
-                <Link href="/sign-up">
+                <Link href="/waitlist">
                   <Button variant="outline" className="w-full h-11 sm:h-12 rounded-full font-medium">
                     Get started free
                   </Button>
@@ -514,7 +514,7 @@ export default function LandingPage() {
                     Priority email support
                   </li>
                 </ul>
-                <Link href="/sign-up">
+                <Link href="/waitlist">
                   <Button className="w-full h-11 sm:h-12 rounded-full bg-[#2bb1ea] hover:bg-[#2bb1ea]/90 font-medium">
                     Start free trial
                   </Button>
@@ -555,7 +555,7 @@ export default function LandingPage() {
                     Priority support
                   </li>
                 </ul>
-                <Link href="/sign-up">
+                <Link href="/waitlist">
                   <Button variant="outline" className="w-full h-11 sm:h-12 rounded-full font-medium">
                     Start free trial
                   </Button>
@@ -667,7 +667,7 @@ export default function LandingPage() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
                 So, what are<br />we building?
               </h2>
-              <Link href="/sign-up">
+              <Link href="/waitlist">
                 <Button className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-6 sm:px-8 py-3 h-auto text-base sm:text-lg font-medium inline-flex items-center gap-2">
                   Get started
                   <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#a8e0f7]">

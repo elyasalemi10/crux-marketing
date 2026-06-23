@@ -18,8 +18,10 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Pre-launch: sign-up funnels into the waitlist instead of the dashboard.
+      { source: '/sign-up', destination: '/waitlist', permanent: false },
+      // Existing users still log in to the dashboard.
       { source: '/login', destination: `${DASHBOARD_URL}/login`, permanent: false },
-      { source: '/sign-up', destination: `${DASHBOARD_URL}/sign-up`, permanent: false },
       { source: '/logout', destination: `${DASHBOARD_URL}/logout`, permanent: false },
       { source: '/dashboard', destination: `${DASHBOARD_URL}/dashboard`, permanent: false },
     ]

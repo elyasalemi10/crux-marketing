@@ -188,12 +188,12 @@ export function LandingNavbar() {
               )}
             </button>
             
-            <Link href="/sign-up">
+            <Link href="/waitlist">
               <Button 
                 size="sm"
                 className="rounded-full bg-[#2bb1ea]/20 text-[#2bb1ea] border-2 border-[#2bb1ea] hover:bg-[#2bb1ea]/30 h-8 sm:h-10 px-3 sm:px-5 font-medium text-xs sm:text-sm transition-colors"
               >
-                Sign up / Login
+                Join waitlist
               </Button>
             </Link>
           </div>
@@ -255,11 +255,11 @@ export function LandingNavbar() {
 
             {/* CTA Button */}
             <div className="pt-4 border-t border-gray-200">
-              <Link href="/sign-up" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/waitlist" onClick={() => setMobileMenuOpen(false)}>
                 <Button 
                   className="w-full rounded-full bg-[#2bb1ea]/20 text-[#2bb1ea] border-2 border-[#2bb1ea] hover:bg-[#2bb1ea]/30 h-12 font-medium text-base transition-colors"
                 >
-                  Sign Up
+                  Join waitlist
                 </Button>
               </Link>
               <Link href="/login" onClick={() => setMobileMenuOpen(false)}>

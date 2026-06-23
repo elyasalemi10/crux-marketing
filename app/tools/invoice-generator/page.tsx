@@ -514,10 +514,10 @@ export default function InvoiceGeneratorPage() {
               CruxLogic can automatically generate and send invoices based on your calendar events and tasks.
             </p>
             <Link
-              href="/sign-up"
+              href="/waitlist"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#2bb1ea] text-white font-medium hover:bg-[#2bb1ea]/90 transition-colors"
             >
-              Get Started Free
+              Join the Waitlist
             </Link>
           </div>
         </div>

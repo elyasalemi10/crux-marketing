@@ -244,10 +244,10 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
             </p>
             <div className="flex items-center justify-center">
               <Link 
-                href="/sign-up" 
+                href="/waitlist" 
                 className="bg-[#2bb1ea] text-white px-8 py-4 rounded-full hover:bg-[#2bb1ea]/90 font-medium text-lg"
               >
-                Start for free
+                Join the waitlist
               </Link>
             </div>
           </div>

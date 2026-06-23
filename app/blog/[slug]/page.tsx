@@ -176,10 +176,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               Connect your email, calendar, and tasks to your AI assistant today. Get started in minutes.
             </p>
             <Link 
-              href="/sign-up"
+              href="/waitlist"
               className="inline-flex items-center px-6 py-3 bg-[#2bb1ea] text-white rounded-full hover:bg-[#2bb1ea]/90 transition-colors font-medium"
             >
-              Get Started Free
+              Join the Waitlist
             </Link>
           </div>
         </div>
