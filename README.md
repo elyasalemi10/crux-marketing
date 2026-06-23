@@ -31,16 +31,13 @@ npm run dev                  # http://localhost:3000
 
 ## Waitlist
 
-All "Sign up" / "Get started" CTAs point to `/waitlist`. The form stores the
-signup in Supabase (`waitlist` table) and emails a notification via Resend.
+All "Sign up" / "Get started" CTAs point to `/waitlist`. The form emails you a
+notification via Resend (no database — signups arrive in your inbox).
 
-**Setup:**
-1. Run [`supabase/waitlist.sql`](supabase/waitlist.sql) once in the Supabase SQL editor.
-2. Set these env vars (see `.env.example`):
-   - `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` — store signups
-   - `RESEND_API_KEY`, `WAITLIST_FROM_EMAIL`, `WAITLIST_NOTIFY_EMAIL` — email notification
-
-If Resend isn't configured the signup is still stored (the email is best-effort).
+**Setup:** set these env vars (see `.env.example`):
+- `RESEND_API_KEY` — your Resend API key
+- `WAITLIST_FROM_EMAIL` — sender, on a domain verified in Resend
+- `WAITLIST_NOTIFICATION_EMAIL` — where signup notifications are sent
 
 ## Dependencies on the dashboard
 
