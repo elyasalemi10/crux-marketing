@@ -1,0 +1,21 @@
+{
+  "name": "CruxLogic",
+  "short_name": "CruxLogic",
+  "description": "Your AI assistant, always connected. Manage emails, calendars, and tasks across Google and Microsoft.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2bb1ea",
+  "icons": [
+    {
+      "src": "/logos/cruxlogic-favicon.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/logos/cruxlogic-favicon.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

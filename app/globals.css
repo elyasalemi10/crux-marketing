@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Hide scrollbars but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide Radix UI ScrollArea scrollbar */
+  .scrollbar-hide [data-radix-scroll-area-viewport] + div {
+    display: none !important;
+  }
+  
+  /* Seamless infinite scroll animation - no hover pause for smooth experience */
+  .animate-scroll-seamless {
+    animation: scroll-seamless 25s linear infinite;
+    will-change: transform;
+  }
+}
+
+@keyframes scroll-seamless {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Aqua/Pink gradient pulse animation */
+@keyframes pulse-gradient {
+  0%, 100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+}
+
+.animate-pulse-gradient {
+  animation: pulse-gradient 3s ease-in-out infinite;
+}
+
+@layer base {
+  :root {
+    /* Brand colors for light mode - using #2bb1ea (HSL 195 83% 55%) */
+    --background: 0 0% 100%;
+    --foreground: 215 72% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 72% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 72% 14%;
+    --primary: 195 83% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 195 30% 95%;
+    --secondary-foreground: 215 72% 14%;
+    --muted: 195 20% 96%;
+    --muted-foreground: 215 30% 40%;
+    --accent: 195 83% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 20% 90%;
+    --input: 215 20% 90%;
+    --ring: 195 83% 55%;
+    --chart-1: 195 83% 55%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 215 72% 14%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 195 83% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 195 60% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 215 40% 20%;
+    --sidebar-ring: 195 83% 55%;
+  }
+  .dark {
+    /* Modern dark theme - charcoal with #2bb1ea accent */
+    --background: 220 20% 10%;
+    --foreground: 210 20% 98%;
+    --card: 220 18% 13%;
+    --card-foreground: 210 20% 98%;
+    --popover: 220 18% 12%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 195 83% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 210 20% 95%;
+    --muted: 220 14% 16%;
+    --muted-foreground: 215 15% 60%;
+    --accent: 195 83% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: 195 83% 55%;
+    --chart-1: 195 83% 55%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 195 83% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 195 30% 15%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 220 13% 18%;
+    --sidebar-ring: 195 83% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply bg-background;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Force white background for landing/public pages */
+  html:not(.dark) {
+    background-color: white;
+  }
+  
+  /* Hide scrollbar globally */
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Fix browser autofill background color */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: #111827 !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  
+  .dark input:-webkit-autofill,
+  .dark input:-webkit-autofill:hover,
+  .dark input:-webkit-autofill:focus,
+  .dark input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px hsl(220, 18%, 13%) inset !important;
+    box-shadow: 0 0 0 30px hsl(220, 18%, 13%) inset !important;
+    -webkit-text-fill-color: hsl(210, 20%, 98%) !important;
+  }
+}

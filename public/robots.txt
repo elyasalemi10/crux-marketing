@@ -1,0 +1,22 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /login
+Disallow: /logout
+Disallow: /sign-up
+Disallow: /dashboard
+Disallow: /chat
+Disallow: /connections
+Disallow: /contacts-book
+Disallow: /files
+Disallow: /channels
+Disallow: /settings
+Disallow: /billing
+
+# Host
+Host: https://cruxlogic.ai
+
+# Sitemaps
+Sitemap: https://cruxlogic.ai/sitemap.xml
